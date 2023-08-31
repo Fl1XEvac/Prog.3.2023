@@ -53,7 +53,6 @@ if dia_sm_low in mylist[4] and dia == 1 and mes == 1 or mes == 7:
     print("El total de arancel es: $", total_arancel)
 else:
     print("No es uno de los dias 1/1 o 1/7 que es donde comienza el nuevo ciclo")
-   
 
 
 
