@@ -1,34 +1,91 @@
-fecha= input("Ingrese dia de la semana, fecha y mes: ")
-dia_sm= (fecha[0:fecha.find(",")])
-dia= int(fecha[fecha.find(",")+1:fecha.find("/")])
-mes= int(fecha[fecha.find("/")+1:])
+#Ejercicio 1
+base= (6)
+altura= (4)
+area= (base*altura)
+perimetro= (base*2+altura*2)
+print(area, perimetro)
 
-dia_sm_low= dia_sm.lower()
+#Ejercicio 2
 
-list_dias= str(["lunes", "martes", "miercoles", "jueves", "viernes"])
+cateto=(3)
+cateto1=(4)
+hipotenusa= (cateto+cateto1)
+print(hipotenusa)
 
-if dia_sm_low != list_dias[dia_sm_low]:
-    print("El dia de semana es incorrecto, por favor, ingrese un dia valido")
+#Ejericio 3
+
+numero= (6)
+numero1= (9)
+suma= (numero+numero1)
+resta= (numero-numero1)
+multiplicacion= (numero*numero1)
+division= (numero/numero1)
+
+#Ejercicio 4
+
+grados_f=(32)
+celsius= ((grados_f-32)*5/9)
+print(celsius)
+
+#Ejericio 5
+
+#a)
+
+a=input("¿Cual es tu cancion favorita?")
+
+#b)
+
+precio= float(input("Precio: "))
+total= precio + (precio*0.1)
+
+#c)
+
+edad= int(input("Edad: "))
+print("Tu edad es: ",edad)
+
+#d)
+
+edad= int(input("Edad: "))
+print("Veamos si tenes 18...", edad==18)
+
+#Ejercicio 6
+
+print("Ingrese 3 numeros para calcular su media")
+numero11= float(input("Ingrese un numero: "))
+numero22= float(input("Ingrese un segundo numero: "))
+numero33= float (input("Ingrese un tercer numero: "))
+media= float((numero11+numero22+numero33)/3)
+print("La media de tus numeros es: ",media)
+
+#Ejercicio 7
+
+minutos= float (input("Ingrese la cantidad de minutos que desee convertir a horas: "))
+horas= int(minutos//60)
+minutos_restantes= (minutos%60)
+print("Los minutos: ",minutos," convertido a horas son: ",horas," y ",minutos_restantes)
+
+#Ejercicio 8
+
+sueldo_base= float(input("Ingrese su sueldo base: "))
+venta= float(input("ingrese el valor de la primera venta: "))
+venta2= float(input("ingrese el valor de la segunda venta: "))
+venta3= float(input("ingrese el valor de la tercera venta: "))
+comisiones= (venta+venta2+venta3)*0.10
+print(sueldo_base+comisiones, " es lo que obtendria de este mes")
+
+#Ejercicio 9
+
+compra=int(input("Ingrese el valor de la compra que desea realizar: "))
+descuento= float(15/100)
+descuento= (compra*descuento)
+precio_total= (compra-descuento)
+print(precio_total)
+
+#Ejercicio 10
 
 
-if dia > 31:
-    print("Ingreso un dia incorrecto, por favor, reinicie el programa e ingrese un numero correcto")
 
-if mes > 12:
-    print("Ingreso un mes incorrecto, por favor, reinicie el programa e ingrese un mes correcto")
 
-if dia == ("lunes" or "martes" or "miercoles"):
-    aprobados= int(input("¿Cuantos alumnos aprobaron?: "))
-    desaprobados= int(input("¿Cuantos desaprobaron?: "))
-    alumnos_total= (aprobados+desaprobados)
-    alumnos_aprobados=((aprobados-desaprobados)//alumnos_total)
-
-if dia == "jueves":
-    porcentaje= int(input("Ingrese el porcentaje de asistencia: ", "%"))
-    if porcentaje > 50:
-        print("Asistio la mayoria")
-    else:
-        print("No asistio la mayoria")
 
 
 
